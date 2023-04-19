@@ -1,0 +1,10 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.customContainer{
+    margin: auto;
+    width: 80%;
+    height: 80%;
+}
