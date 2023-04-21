@@ -13,7 +13,9 @@ nav {
 }
 
 .bg-img {
-  background-image: url("../../changed.jpg");
+  background-image: url("../../a59e971e-8bd4-4203-a8bd-d9676ebddde7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 body {
