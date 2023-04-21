@@ -4,7 +4,7 @@
 
 nav {
     border-bottom: 2px solid white;
-    margin-bottom: 2.5%;
+    margin-bottom: 1.25%;
 }
 
 .cMargin {
@@ -13,7 +13,19 @@ nav {
 }
 
 .bg-img{
-    background-image: url("../../a59e971e-8bd4-4203-a8bd-d9676ebddde7.jpg");
+    // background-image: url("../../a59e971e-8bd4-4203-a8bd-d9676ebddde7.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.c-h1{
+    height: 2px;
+    right: 0;
+    margin-left: auto;
+}
+
+.c-h2{
+    height: 2px;
+    left: 0;
+    margin-right: auto;
 }
