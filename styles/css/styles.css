@@ -21,12 +21,19 @@ nav {
   height: 2px;
   right: 0;
   margin-left: auto;
+  background-color: black;
 }
 
 .c-h2 {
   height: 2px;
   left: 0;
   margin-right: auto;
+  background-color: black;
+}
+
+#box1, #box2 {
+  bottom: 0;
+  margin-top: auto;
 }
 
 body {
