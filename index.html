@@ -8,11 +8,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js
                     "></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="./styles/css/styles.css">
     <title>Home</title>
 </head>
 <body>
-    <div class="shadow-lg rounded text-bg-dark p-3 container">
+
+    <div class="border shadow-lg rounded text-bg-dark p-3 container cMargin">
         <nav class="navbar bg-body-primary">
             <div class="container-fluid">
                 <a class="navbar-brand text-white" href="#">
@@ -29,8 +30,23 @@
                 </ul>
             </div>
         </nav>
-        <div class="cContainer">
-            
+        <div class="w-100 c-h-85 bg-white">
+            <div id="carouselExample" class="carousel slide w-100 h-100 ">
+                <div class="carousel-inner w-100 h-100">
+                    <div class="carousel-item active w-100 h-100 bg-img"></div>
+                    <div class="carousel-item">
+                        <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
     </div>
     <script src="main.js"></script>
