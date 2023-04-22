@@ -36,6 +36,29 @@ nav {
   margin-top: auto;
 }
 
+.c-m-b {
+  margin-top: 15%;
+}
+
+.c-f {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.toggle {
+  display: none;
+}
+
+.progress {
+  margin-bottom: 2px;
+}
+
+.c-mt {
+  margin-top: 1px;
+}
+
 body {
   width: 100vw;
   height: 100vh;
