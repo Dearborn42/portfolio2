@@ -9,3 +9,21 @@ body {
 .c-h-85{
     height: 85%;
 }
+
+/* Hide the default scrollbar */
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: black;
+    width: 1px;
+}
+::-webkit-scrollbar-thumb {
+    background: #fff;
+    border: 2px solid #ccc;
+}
+
+/* Set the scrollbar width and height */
+::-webkit-scrollbar-thumb {
+    width: 5px;
+    height: 75px;
+}

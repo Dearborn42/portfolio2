@@ -12,6 +12,7 @@ function animateBox(box){
 
 $(".carousel-control-next").on('click', function(){
         if (!$('#info').hasClass('active')) {
+          $(".divider").delay(1000).animate({height: '100%'}, 1000);
                 animateBox('#box1');
                 animateBox('#box2');
                 animateBox('#box3');
