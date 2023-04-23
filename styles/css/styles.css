@@ -117,4 +117,20 @@ body {
 ::-webkit-scrollbar-thumb {
   width: 5px;
   height: 75px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: none;
+  color: black;
+  filter: brightness(1) invert(1);
+}
+
+.c-ms {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c-w-15 {
+  width: 15%;
 }/*# sourceMappingURL=styles.css.map */
