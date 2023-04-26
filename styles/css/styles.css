@@ -89,6 +89,10 @@ nav {
   height: 90%;
 }
 
+.w-35 {
+  width: 35%;
+}
+
 body {
   width: 100vw;
   height: 100vh;
