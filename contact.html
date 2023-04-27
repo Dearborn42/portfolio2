@@ -36,11 +36,38 @@
                 </ul>
             </div>
         </nav>
-        <div class="w-100 c-h-85">
-            
+        <div class="w-100 h-85 d-flex justify-content-evenly">
+            <div class="offcanvas w-40 h-90 mv" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-body">
+                    <img src="./resume.png" class="w-100 h-100" alt="">
+                </div>
+            </div>
+            <div class="w-50 h-100 d-flex flex-column">
+                <ul class="list-group">
+                    <li class="list-group-item bg-secondary text-white">Contact information</li>
+                    <li class="list-group-item bg-secondary text-white">amurf26@outlook.com</li>
+                    <li class="list-group-item bg-secondary text-white">602-320-8417</li>
+                    <li class="list-group-item bg-secondary text-white">Github: <a class="text-white" href="https://github.com/Dearborn42">Dearborn42</a></li>
+                </ul>
+                <br>
+                <div class="mb-3">
+                    <input type="text" class="form-control bg-secondary text-white subject" id="exampleFormControlInput1" placeholder="Subject">
+                    <input type="email" class="form-control bg-secondary text-white email" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <input type="password" class="form-control bg-secondary text-white password id="exampleFormControlInput1" placeholder="Password">
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control r-n h-100 bg-secondary text-white overflow-y-auto text" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <input class="btn btn-primary send-email" type="submit" value="Submit">
+
+            </div>
+            <div class="w-35 h-100">
+                <img src="./resume.png" class="w-100 h-100" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" alt="">
+            </div>
         </div>
             
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
