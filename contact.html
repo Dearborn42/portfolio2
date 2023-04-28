@@ -15,7 +15,7 @@
 
 <body>
 
-    <div class="border shadow-lg rounded text-bg-dark p-3 container cMargin">
+    <div class="text-bg-dark p-3 h-100 w-100">
         <nav class="navbar bg-body-primary">
             <div class="container-fluid">
                 <a class="navbar-brand text-white" href="#">
@@ -50,15 +50,16 @@
                     <li class="list-group-item bg-secondary text-white">Github: <a class="text-white" href="https://github.com/Dearborn42">Dearborn42</a></li>
                 </ul>
                 <br>
-                <div class="mb-3">
-                    <input type="text" class="form-control bg-secondary text-white subject" id="exampleFormControlInput1" placeholder="Subject">
-                    <input type="email" class="form-control bg-secondary text-white email" id="exampleFormControlInput1" placeholder="name@example.com">
-                    <input type="password" class="form-control bg-secondary text-white password id="exampleFormControlInput1" placeholder="Password">
-                </div>
-                <div class="mb-3">
-                    <textarea class="form-control r-n h-100 bg-secondary text-white overflow-y-auto text" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <input class="btn btn-primary send-email" type="submit" value="Submit">
+                <form id="my-form">
+                    <div class="mb-3">
+                        <input type="text" class="form-control bg-secondary text-white subject" id="exampleFormControlInput1" placeholder="Subject">
+                        <input type="email" class="form-control bg-secondary text-white email" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control r-n h-100 bg-secondary text-white overflow-y-auto text" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <input class="btn btn-primary send-email" type="submit" value="Submit">
+                </form>
 
             </div>
             <div class="w-35 h-100">

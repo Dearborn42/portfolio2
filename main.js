@@ -30,29 +30,31 @@ $(document).ready(function(){
 });
 
 
-$('.send-email').on('click', function(){
-  let subject = $(".Subject").val();
-  let email = $('.email').val();
-  let password = $('.password').val();
-  let text = $('.text').val();
 
-  Email.send({
-    Host: "smtp.gmail.com",
-    Username: `${email}`,
-    Password: `${password}`,
-    To: "amurf26@outlook.com",
-    From: `${email}`,
-    Subject: `${subject}`,
-    Body: `${text}`,
-    Port: 587,
-    TLS: {
-      ciphers: "SSLv3",
-    },
-})
-  .then(function (message) {
-    alert("Email sent successfully");
-  })
-  .catch(function (error) {
-    alert("Error sending email: " + error);
+const form = $('#my-form');
+const endpoint = 'http://localhost:3000';
+
+form.on('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    let subject = $(".Subject").val();
+    let email = $('.email').val();
+    let text = $('.text').val();
+
+    // Send form data to server using Ajax
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', endpoint);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.onload = function() {
+      if (xhr.status === 200) {
+        console.log(xhr.responseText);
+        // Handle success response from server here
+      } else {
+        console.log('Error');
+        // Handle error response from server here
+      }
+    };
+
+    xhr.send(JSON.stringify({ email, text, subject }));
   });
-})
+
