@@ -1,0 +1,33 @@
+import express from 'express';
+import cors from 'cors';
+import sgMail from '@sendgrid/mail';
+sgMail.setApiKey(process.env.SENDGRID_API_KEY)
+
+const app = express();
+app.use(cors());
+app.use(express.urlencoded({ extended: false, limit: 100000, parameterLimit: 3}))
+
+app.post('/email', (req, res) => {
+  const msg = {
+    to: 'amurph068@west-mec.org', // Change to your recipient
+    from: `${req.body.email}`, // Change to your verified sender
+    subject: `${req.body.subject}`,
+    html: '<p>' + `${req.body.message}` + '</p>',
+  }
+
+
+  sgMail
+    .send(msg)
+    .then((response) => {
+      console.log(response[0].statusCode);
+      console.log(response[0].headers);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+});
+
+app.listen(3000, () => {
+  console.log('Server listening on port 3000');
+});
+

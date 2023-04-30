@@ -24,6 +24,24 @@ body {
 
 /* Set the scrollbar width and height */
 ::-webkit-scrollbar-thumb {
+    width: 8px;
+    height: 75px;
+}
+
+.black-scroll::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: black;
+    width: 4px;
+}
+
+.black-scroll::-webkit-scrollbar-thumb {
+    background: #000;
+    border: 8px solid #000;
+}
+
+/* Set the scrollbar width and height */
+.black-scroll::-webkit-scrollbar-thumb {
     width: 5px;
     height: 75px;
 }

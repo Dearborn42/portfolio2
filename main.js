@@ -31,30 +31,43 @@ $(document).ready(function(){
 
 
 
-const form = $('#my-form');
-const endpoint = 'http://localhost:3000';
+const form = document.querySelector("form");
 
-form.on('submit', function(event) {
-    event.preventDefault(); // Prevent default form submission
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
 
-    let subject = $(".Subject").val();
-    let email = $('.email').val();
-    let text = $('.text').val();
+  const fd = new FormData(form);
 
-    // Send form data to server using Ajax
-    const xhr = new XMLHttpRequest();
-    xhr.open('POST', endpoint);
-    xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.onload = function() {
-      if (xhr.status === 200) {
-        console.log(xhr.responseText);
-        // Handle success response from server here
-      } else {
-        console.log('Error');
-        // Handle error response from server here
-      }
-    };
+  const urlEncoded = new URLSearchParams(fd).toString();
 
-    xhr.send(JSON.stringify({ email, text, subject }));
-  });
+  fetch('http://localhost:3000/email', {
+    method: "POST",
+    body: urlEncoded,
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+    }
+  })
+
+
+});
+
+   // let subject = $(".Subject").val();
+    // let email = $('.email').val();
+    // let text = $('.text').val();
+
+    // // Send form data to server using Ajax
+    // const xhr = new XMLHttpRequest();
+    // xhr.open('POST', endpoint);
+    // xhr.setRequestHeader('Content-Type', 'application/json');
+    // xhr.onload = function() {
+    //   if (xhr.status === 200) {
+    //     console.log(xhr.responseText);
+    //     // Handle success response from server here
+    //   } else {
+    //     console.log('Error');
+    //     // Handle error response from server here
+    //   }
+    // };
+
+    // xhr.send(JSON.stringify({ email, text, subject }));
 
