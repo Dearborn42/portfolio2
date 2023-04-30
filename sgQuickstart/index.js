@@ -9,8 +9,8 @@ app.use(express.urlencoded({ extended: false, limit: 100000, parameterLimit: 3})
 
 app.post('/email', (req, res) => {
   const msg = {
-    to: 'amurph068@west-mec.org', // Change to your recipient
-    from: `${req.body.email}`, // Change to your verified sender
+    to: 'amurph068@west-mec.org',
+    from: `${req.body.email}`,
     subject: `${req.body.subject}`,
     html: '<p>' + `${req.body.message}` + '</p>',
   }
@@ -27,7 +27,5 @@ app.post('/email', (req, res) => {
     });
 });
 
-app.listen(3000, () => {
-  console.log('Server listening on port 3000');
-});
+app.listen(3000);
 
