@@ -84,3 +84,109 @@ body {
 .w-45{
     width: 45%;
 }
+
+.toggle{
+    display: none;
+}
+
+.container {
+    height: 90%;
+}
+
+nav {
+    border-bottom: 2px solid white;
+    margin-bottom: 1.25%;
+}
+
+.cMargin {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.bg-img {
+    // background-image: url("../../a59e971e-8bd4-4203-a8bd-d9676ebddde7.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.c-h1 {
+    height: 0;
+    right: 0;
+    margin-left: auto;
+    background-color: black;
+}
+
+.c-h2 {
+    height: 0;
+    left: 0;
+    margin-right: auto;
+    background-color: black;
+}
+
+
+.c-m-b {
+    margin-top: 15%;
+}
+
+.c-f {
+    margin: {
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+    }
+}
+
+
+
+.c-mt {
+    margin-top: 3px;
+}
+
+.w-2 {
+    width: 2px;
+}
+
+.h-0 {
+    height: 0;
+}
+
+.t-b {
+    bottom: 0;
+    margin-top: auto;
+}
+
+.c-90 {
+    width: 90%;
+    height: 90%;
+}
+
+.w-35 {
+    width: 35%;
+}
+
+
+.hide {
+    display: none;
+}
+
+.w-80{
+    width: 80%;
+}
+.h-80{
+    height: 80%;
+}
+.w-15{
+    width: 15%;
+}
+
+@media (max-width: 488px) {
+    .nav-item {
+        display: none;
+
+    }
+
+    .hide {
+        display: block;
+    }
+}

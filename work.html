@@ -19,8 +19,7 @@
         <nav class="navbar bg-body-primary">
             <div class="container-fluid">
                 <a class="navbar-brand text-white" href="#">
-                    <img src="./favicon-32x32.png" alt="Logo" width="35" height="35"
-                        class="d-inline-block align-text-top">
+                    <img src="./favicon-32x32.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top">
                     Andrew Murphy
                 </a>
                 <ul class="nav justify-content-end">
@@ -33,28 +32,31 @@
                     <li class="nav-item">
                         <a class="nav-link text-white" href="contact.html">Contact</a>
                     </li>
+                    <div class="btn-group hide">
+                        <button type="button" class="btn bg-black text-white dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">Menu</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+                            <li><a class="nav-link" href="work.html">Work</a></li>
+                            <li><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
                 </ul>
             </div>
         </nav>
         <div class="w-100 h-85 ">
-            <div id="carouselExampleIndicators" class="carousel slide w-100 h-100">
-                <div class="carousel-indicators h-25 w-50 container-fluid c-ms">
+            <div id="carouselExampleIndicators" class="carousel slide w-100 h-100 d-flex flex-column">
+                <div class="carousel-indicators h-50 w-50 container-fluid m-auto">
 
-                        <img src="./c4.png" alt="" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-label="Slide 1" class="active h-50 w-25" aria-current="true">
+                        <img src="./c4.png" alt="" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-label="Slide 1" class="img-thumbnail align-self-center active flex-fill h-25" aria-current="true">
 
-                        <img src="./eastMec.png" alt="" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="img-thumbnail h-50 w-25">
+                        <img src="./eastMec.png" alt="" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="align-self-center img-thumbnail flex-fill h-25">
 
-                        <img src="./Pizza.png" alt="" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="img-thumbnail h-50 w-25">
+                        <img src="./Pizza.png" alt="" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="align-self-center img-thumbnail flex-fill h-25">
 
-                        <img src="./yoda.png" alt="" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4" class="img-thumbnail h-50 w-25">
-
-                        
-
-                        
-                        
-
+                        <img src="./yoda.png" alt="" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4" class="align-self-center img-thumbnail flex-fill h-25">
                 </div>
-                <div class="carousel-inner w-100 h-100">
+                <div class="carousel-inner w-80 m-auto">
                     <div class="carousel-item active w-100 h-100">
                         <a href="">
                             <img src="./c4.png" class="d-block w-100 h-100" alt="...">
