@@ -1,5 +1,10 @@
 @import "./home.scss";
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -18,7 +23,7 @@ body {
     width: 1px;
 }
 ::-webkit-scrollbar-thumb {
-    background: #fff;
+    // background: #fff;
     border: 2px solid #ccc;
 }
 

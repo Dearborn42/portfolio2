@@ -1,6 +1,12 @@
 function animateBox(box){
+
+  if(window.innerWidth >= 462){
     $(box).delay(1000).animate({width: '50%'}, 1000).animate({height: '100%'}, 1000);
     $('.toggle').delay(3500).fadeIn();
+  }else{
+    $(box).delay(1000).animate({width: '100%'}, 1000).animate({height: '100%'}, 1000);
+    $('.toggle').delay(3500).fadeIn();
+  }
 }
 
 $(".carousel-control-next").on('click', function(){
@@ -12,6 +18,8 @@ $(".carousel-control-next").on('click', function(){
         animateBox('#box4');
     }
 });
+
+console.log(window.innerWidth)
 
 
 // $(".carousel-control-next").on('click', function(){$("#carouselExampleCaptions").carousel('next')});
