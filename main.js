@@ -1,3 +1,8 @@
+
+window.addEventListener("orientationchange", function() {
+  this.location.reload();
+})
+
 function animateBox(box){
 
   if(window.innerWidth >= 462){
@@ -19,8 +24,6 @@ $(".carousel-control-next").on('click', function(){
     }
 });
 
-console.log(window.innerWidth)
-
 
 // $(".carousel-control-next").on('click', function(){$("#carouselExampleCaptions").carousel('next')});
 
@@ -35,47 +38,11 @@ $(document).ready(function(){
   $('#accordion2 .card-header').click(function() {
     $('#collapseTwo').collapse('toggle');
   });
+
+  let layout2 = $(".container-2");
+  let carouselItem = $("#carouselExample > div > div.info.carousel-item.w-100.h-100.item-2");
+  if(window.innerWidth <= 462){
+    layout2.addClass("carousel-item")
+    layout2.insertAfter(carouselItem);
+  }
 });
-
-
-
-const form = document.querySelector("form");
-
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  const fd = new FormData(form);
-
-  const urlEncoded = new URLSearchParams(fd).toString();
-
-  fetch('http://localhost:3000/email', {
-    method: "POST",
-    body: urlEncoded,
-    headers: {
-      'Content-Type': 'application/x-www-form-urlencoded',
-    }
-  })
-
-
-});
-
-   // let subject = $(".Subject").val();
-    // let email = $('.email').val();
-    // let text = $('.text').val();
-
-    // // Send form data to server using Ajax
-    // const xhr = new XMLHttpRequest();
-    // xhr.open('POST', endpoint);
-    // xhr.setRequestHeader('Content-Type', 'application/json');
-    // xhr.onload = function() {
-    //   if (xhr.status === 200) {
-    //     console.log(xhr.responseText);
-    //     // Handle success response from server here
-    //   } else {
-    //     console.log('Error');
-    //     // Handle error response from server here
-    //   }
-    // };
-
-    // xhr.send(JSON.stringify({ email, text, subject }));
-

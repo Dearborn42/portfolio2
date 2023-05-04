@@ -22,24 +22,35 @@
     display: flex;
     flex-direction: row;
 }
+.container-2 {
+    display: flex;
+    flex-direction: row;
+}
 
 @media (max-width: 462px) {
-    .item-2{
-        display: flex;
-        flex-direction: column;
-    }
+    // .item-2{
+    //     display: flex;
+    //     flex-direction: column;
+    // }
 
     .divider{
         display: none;
     }
     
-    .container-1{
+    .container-1, .container-2{
         flex-direction: column;
+        height: 100%!important;
+    }
+    .container-2{
+        display: none;
     }
 
     #box1, #box2, #box3, #box4{
         border-bottom: 2px solid white;
         border-top: 2px solid white;
         margin-bottom: 5%;
+    }
+    #box3, #box4{
+        height: 50%!important;
     }
 }
