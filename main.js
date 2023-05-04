@@ -1,3 +1,6 @@
+
+
+
 function animateBox(box){
 
   if(window.innerWidth >= 462){
@@ -17,6 +20,14 @@ $(".carousel-control-next").on('click', function(){
         animateBox('#box3');
         animateBox('#box4');
     }
+    // if(window.innerWidth <= 462){
+    //   $("#box1, #box2, #box3, #box4").animate({width: '100%'}, 1000).animate({height: '100%'}, 1000);
+    //   $('.toggle').delay(2500).fadeIn();
+    //   let layout2 = $("#layout-2");
+    //   layout2.removeClass('layout-2');
+    //   const child = $("#carouselExample > div > div.info.carousel-item.w-100.h-100.item-2.active");
+    //   layout2.insertAfter(child)
+    // }
 });
 
 console.log(window.innerWidth)
@@ -35,6 +46,11 @@ $(document).ready(function(){
   $('#accordion2 .card-header').click(function() {
     $('#collapseTwo').collapse('toggle');
   });
+
+  $('#accordion3 .card-header').click(function() {
+    $('#collapseThree').collapse('toggle');
+  });
+  $('#collapseThree').collapse('hide');
 });
 
 
