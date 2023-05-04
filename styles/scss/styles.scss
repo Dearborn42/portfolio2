@@ -1,6 +1,6 @@
 @import "./home.scss";
 
-* {
+*{
     margin: 0;
     padding: 0;
 }
@@ -11,8 +11,7 @@ body {
     display: flex;
     justify-content: space-around;
 }
-
-.h-85 {
+.h-85{
     height: 85%;
 }
 
@@ -23,7 +22,6 @@ body {
     background: black;
     width: 1px;
 }
-
 ::-webkit-scrollbar-thumb {
     // background: #fff;
     border: 2px solid #ccc;
@@ -59,41 +57,40 @@ body {
     filter: brightness(1) invert(1);
 }
 
-.c-ms {
+.c-ms{
     margin-left: auto;
     margin-right: auto;
 }
-
-.mv {
+.mv{
     margin-top: auto;
     margin-bottom: 2.5%;
 }
 
-.c-w-15 {
+.c-w-15{
     width: 15%;
 }
 
-.w-35 {
+.w-35{
     width: 35%;
 }
 
-.r-n {
+.r-n{
     resize: none;
 }
 
-.h-90 {
+.h-90{
     height: 90%;
 }
 
-.w-40 {
+.w-40{
     width: 40%;
 }
 
-.w-45 {
+.w-45{
     width: 45%;
 }
 
-.toggle {
+.toggle{
     display: none;
 }
 
@@ -135,7 +132,6 @@ nav {
 .c-m-b {
     margin-top: 15%;
 }
-
 .c-mt {
     margin-top: 3px;
 }
@@ -167,15 +163,13 @@ nav {
     display: none;
 }
 
-.w-80 {
+.w-80{
     width: 80%;
 }
-
-.h-80 {
+.h-80{
     height: 80%;
 }
-
-.w-15 {
+.w-15{
     width: 15%;
 }
 
