@@ -45,4 +45,7 @@ $(document).ready(function(){
     layout2.addClass("carousel-item")
     layout2.insertAfter(carouselItem);
   }
+  if(window.innerHeight <= 347){
+    $(".navbar-brand").addClass('fs-6');
+  }
 });
