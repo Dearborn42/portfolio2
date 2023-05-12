@@ -1,5 +1,5 @@
 const form = document.querySelector("form");
-
+// gets form's data, encodes it and sends it to the server
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 

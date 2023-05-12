@@ -1,6 +1,7 @@
 
 window.addEventListener("orientationchange", function() {
   this.location.reload();
+  // this will help with layout issues
 })
 
 function animateBox(box){
@@ -13,7 +14,7 @@ function animateBox(box){
     $('.toggle').delay(3500).fadeIn();
   }
 }
-
+// toggles animation
 $(".carousel-control-next").on('click', function(){
     if (!$('.info').hasClass('active')) {
         $(".divider").delay(1000).animate({height: '100%'}, 1000);
@@ -28,6 +29,7 @@ $(".carousel-control-next").on('click', function(){
 // $(".carousel-control-next").on('click', function(){$("#carouselExampleCaptions").carousel('next')});
 
 $(document).ready(function(){
+  // functions control for acordians
   $('#collapseOne').collapse('hide');
 
   $('#accordion1 .card-header').click(function() {
@@ -39,6 +41,8 @@ $(document).ready(function(){
     $('#collapseTwo').collapse('toggle');
   });
 
+
+  // this is the layout change
   let layout2 = $(".container-2");
   let carouselItem = $("#carouselExample > div > div.info.carousel-item.w-100.h-100.item-2");
   if(window.innerWidth <= 462){

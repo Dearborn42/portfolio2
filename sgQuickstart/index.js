@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import sgMail from '@sendgrid/mail';
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)
-
+// recieves form data and email it to my west-mec email
 const app = express();
 app.use(cors());
 app.use(express.urlencoded({ extended: false, limit: 100000, parameterLimit: 3}))
