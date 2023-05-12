@@ -223,6 +223,10 @@ nav {
   width: 15%;
 }
 
+::after {
+  filter: invert(1);
+}
+
 @media (max-width: 488px) {
   .nav-item {
     display: none;
